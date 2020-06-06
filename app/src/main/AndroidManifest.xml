@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.movie.demo">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activitys.RigisterActivity"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".activitys.MessageDetailActivity"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".activitys.MyLikeListActivity"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".activitys.MovieDetailActivity"
+            android:theme="@style/Transparent" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

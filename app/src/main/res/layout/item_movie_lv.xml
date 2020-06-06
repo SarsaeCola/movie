@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffffff"
+    android:paddingLeft="16dp"
+    android:paddingTop="15dp"
+    android:paddingRight="16dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgv_list"
+        android:layout_width="87dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        app:actualImageResource="@mipmap/ic_launcher"
+        app:actualImageScaleType="centerCrop"
+        app:placeholderImage="@mipmap/ic_launcher"
+        app:placeholderImageScaleType="centerCrop"
+        app:roundedCornerRadius="4dp" />
+
+    <TextView
+        android:id="@+id/tv_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/tv_status"
+        android:layout_toRightOf="@+id/imgv_list"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="1"
+        android:textColor="#43496A"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="第十五届“声而不凡 音为有你”校园十佳歌手大赛决赛圆满结束" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_bg_3853e8_4"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/whilt"
+        android:textSize="12sp"
+        tools:text="已订阅" />
+
+</RelativeLayout>
